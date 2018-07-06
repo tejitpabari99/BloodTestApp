@@ -17,9 +17,10 @@ import { StyleSheet ,Text, View,Button,Image,video} from 'react-native';
             <Text>  </Text>
             <Text></Text>
             <Text></Text>
-          <Image source={       require('../Images/2.png')}   style={{width: 380, height: 200}} />
-                            <Text>                        Open Gauze packet and place </Text>
-                              <Text>                             it nearby for future uses</Text>
+          <Image source={       require('../Images/2.png')}   style={{width: 420, height: 250}} />
+          <Text>  </Text>
+                            <Text style={styles.headline}>                       Open Gauze packet and place </Text>
+                              <Text style={styles.headline}>                             it nearby for future uses</Text>
                               <Text></Text>
 
       <Button onPress= {() => this.props.navigation.navigate ('Instructions3')}
@@ -28,5 +29,18 @@ import { StyleSheet ,Text, View,Button,Image,video} from 'react-native';
           );
         }
       }
+
+      const styles = StyleSheet.create({
+        container: {
+          flex: 1,
+          width: '100%',
+          height: '100%',
+        },
+        headline: {
+        fontSize: 18,
+        justifyContent: 'center',
+        alignItems: 'center',
+     },
+      });
 
   export default Instructions2;

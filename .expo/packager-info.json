@@ -1,5 +1,8 @@
 {
-  "expoServerPort": null,
-  "packagerPort": null,
-  "packagerPid": null
+  "expoServerPort": 19000,
+  "packagerPort": 19001,
+  "packagerPid": 9243,
+  "expoServerNgrokUrl": "https://uq-f9t.michaelokrah.smartest.exp.direct",
+  "packagerNgrokUrl": "https://packager.uq-f9t.michaelokrah.smartest.exp.direct",
+  "ngrokPid": 9257
 }

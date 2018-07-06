@@ -12,15 +12,17 @@ import { StyleSheet ,Text, View,Button,Image,video} from 'react-native';
   render() {
     return (
       <View>
-        <Text>                     CHOOSE A FINGER TO PRICK.    </Text>
-        <Text> WE RECOMMEND ONE ON YOUR NON-DOMINANT  </Text>
-          <Text>                                         HAND. </Text>
-          <Image source={       require('../Images/8B.png')}   style={{width: 370, height: 250}} />
+        <Text style={styles.headline}>                        Choose a finger to prick    </Text>
+        <Text style={styles.headline}> We recommend one on your non-dominant hand </Text>
+        <Text></Text>
+        <Text></Text>
+
+          <Image source={       require('../Images/8B.png')}   style={{width: 420, height: 250}} />
           <Text></Text>
 
           <Text></Text>
 
-        <Text>    MASSAGE YOUR FINGER TO STIMULATE BLOOD FLOW </Text>
+        <Text style={styles.headline}>      Massage your finger to stimulate blood flow </Text>
             <Text>                                              </Text>
             <Text></Text>
 
@@ -32,5 +34,19 @@ import { StyleSheet ,Text, View,Button,Image,video} from 'react-native';
           );
         }
       }
+
+      const styles = StyleSheet.create({
+        container: {
+          flex: 1,
+          width: '100%',
+          height: '100%',
+        },
+        headline: {
+        fontSize: 18,
+        justifyContent: 'center',
+        alignItems: 'center',
+     },
+      });
+
 
   export default Instructions5;

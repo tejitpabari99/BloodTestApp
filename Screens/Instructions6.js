@@ -12,16 +12,17 @@ import { StyleSheet ,Text, View,Button,Image,video} from 'react-native';
   render() {
     return (
       <View>
-        <Text>                          Pick up alcohol swab   </Text>
-          <Image source={       require('../Images/alcohol.jpg')}   style={{width: 370, height: 250}} />
+        <Text style={styles.headline}>                          Pick up alcohol swab   </Text>
+<Text>                       </Text>
+          <Image source={       require('../Images/alcohol.jpg')}   style={{width: 420, height: 250}} />
         <Text>                       </Text>
-          <Text>                          Wipe the tip of your finger  </Text>
-          <Text>                           with the swab and let it dry   </Text>
-            <Text>                                    completely.</Text>
-          <Image source={       require('../Images/7B.png')}   style={{width: 370, height: 250}} />
+          <Text style={styles.headline}>                          Wipe the tip of your finger  </Text>
+          <Text style={styles.headline}>                         with the swab and let it dry   </Text>
+            <Text style={styles.headline}>                                    completely.</Text>
+          <Image source={       require('../Images/7B.png')}   style={{width: 420, height: 250}} />
 
 
-
+<Text>                       </Text>
 
       <Button onPress= {() => this.props.navigation.navigate ('Instructions7')}
         title="Next"/>
@@ -29,5 +30,20 @@ import { StyleSheet ,Text, View,Button,Image,video} from 'react-native';
           );
         }
       }
+      const styles = StyleSheet.create({
+        container: {
+          flex: 1,
+          width: '100%',
+          height: '100%',
+        },
+        headline: {
+        fontSize: 18,
+        justifyContent: 'center',
+        alignItems: 'center',
+     },
+      });
+
+
+
 
   export default Instructions6;

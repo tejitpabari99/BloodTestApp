@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import { StyleSheet ,Text, View} from 'react-native';
 import {StackNavigator} from 'react-navigation';
+import {TabNavigator} from 'react-navigation';
 
-import LoginScreen from './Screens/LoginScreen'
-import SignupScreen from './Screens/SignupScreen'
+import tabTest from './Screens/tabTest'
+//import LoginScreen from './Screens/LoginScreen'
+//import SignupScreen from './Screens/SignupScreen'
 import HomeScreen from './Screens/HomeScreen'
 import TestSelection from './Screens/TestSelection'
 import TestSetup from './Screens/TestSetup'
@@ -31,6 +33,7 @@ import TextMessage from './Screens/TextMessage'
 import LinkURL from './Screens/LinkURL'
 import DeletePage from './Screens/DeletePage'
 import ScanResults from './Screens/ScanResults'
+import ScanResults2 from './Screens/ScanResults2'
 import GuestInstructions from './Screens/GuestInstructions'
 import GuestInstructions2 from './Screens/Instructions2'
 import GuestInstructions3 from './Screens/GuestInstructions3'
@@ -76,12 +79,14 @@ export default class App extends React.Component {
 }
 
 const AppNavigator = StackNavigator({
-    LoginScreen : {screen : LoginScreen},
-    SignupScreen : {screen : SignupScreen},
+
+    //LoginScreen : {screen : LoginScreen},
+    //SignupScreen : {screen : SignupScreen},
     HomeScreen : {screen: HomeScreen},
     TestSelection : {screen : TestSelection},
     TestSetup : {screen : TestSetup},
     VideoInfo : {screen : VideoInfo},
+    tabTest : {screen: tabTest},
     VideoPlaceHolder : {screen : VideoPlaceHolder},
     GuestInstructions : {screen : GuestInstructions},
     GuestInstructions2 : {screen : GuestInstructions2},
@@ -110,6 +115,7 @@ const AppNavigator = StackNavigator({
     Instructions11: {screen : Instructions11},
     Instructions12: {screen : Instructions12},
     ScanResults: {screen : ScanResults},
+    ScanResults2: {screen : ScanResults2},
     PreResults: {screen : PreResults},
     ResultsPage: {screen : ResultsPage},
     ResultShare: {screen : ResultShare},

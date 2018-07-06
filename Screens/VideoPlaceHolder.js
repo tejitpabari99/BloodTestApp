@@ -26,8 +26,9 @@ import VideoPlayer from '@expo/videoplayer';
               },
             }}
             isPortrait={true}
+            paused={true}
             playFromPositionMillis={0}
-            
+
           />
 
           <Text></Text>
@@ -35,13 +36,14 @@ import VideoPlayer from '@expo/videoplayer';
           <Text></Text>
           <Text></Text>
 
+                    
 
 
 
-          <Button onPress= {() => this.props.navigation.navigate ('Instructions')}
+
+
+           <Button onPress= {() => this.props.navigation.navigate ('Instructions')}
             title="NEXT"/>
-
-
 
 
 

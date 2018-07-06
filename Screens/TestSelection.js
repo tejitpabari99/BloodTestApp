@@ -12,7 +12,7 @@ import { StyleSheet ,Text, View,Button,Image,video} from 'react-native';
   render() {
     return (
       <View>
-        <Text>SELECT A TEST BELOW : </Text>
+        <Text style={styles.headline}>SELECT A TEST BELOW : </Text>
           <Text>  </Text>
             <Text>  </Text>
 
@@ -22,5 +22,20 @@ import { StyleSheet ,Text, View,Button,Image,video} from 'react-native';
           );
         }
       }
+
+      const styles = StyleSheet.create({
+        container: {
+          flex: 1,
+          width: '100%',
+          height: '100%',
+        },
+        headline: {
+        fontSize: 18,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+      });
+
+
 
   export default TestSelection;

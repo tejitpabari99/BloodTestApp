@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet ,Text, View,Button,Image,video} from 'react-native';
+import { StyleSheet ,Text, View,Button,Image,video,ScrollView} from 'react-native';
 
 
 
@@ -11,33 +11,49 @@ import { StyleSheet ,Text, View,Button,Image,video} from 'react-native';
   };
   render() {
     return (
-      <View>
-        <Text>                    Pick up solution tube #3 and mix the      </Text>
-          <Image source={       require('../Images/13A.jpg')}   style={{width: 370, height: 250}} />
+      <ScrollView>
+        <Text style={styles.headline}>               Pick up solution tube #3 and mix      </Text>
+        <Text>                         </Text>
+          <Text>                          </Text>
+          <Image source={       require('../Images/13A.jpg')}   style={{width: 420, height: 250}} />
 
 
-          <Text>                         Remove the cap and pour on to</Text>
-            <Text>                              the center of the test membrane. </Text>
+          <Text style={styles.headline}>                Remove the cap and pour on to</Text>
+            <Text style={styles.headline}>               the center of the test membrane. </Text>
               <Text>                          </Text>
                 <Text>                          </Text>
 
 
-                <Text>                      Remove the cap and pour contents           </Text>
-                <Text>                          into the center of the test    .   </Text>
+                <Text style={styles.headline}>               Remove the cap and pour contents           </Text>
+                <Text style={styles.headline}>                      into the center of the test.   </Text>
                   <Text>                          </Text>
-                    <Image source={       require('../Images/13B.png')}   style={{width: 370, height: 250}} />
+                    <Image source={       require('../Images/13B.png')}   style={{width: 420, height: 250}} />
 
 
 
-
+<Text>                          </Text>
 
 
 
       <Button onPress= {() => this.props.navigation.navigate ('ScanResults')}
         title="Next"/>
-</View>
+</ScrollView>
           );
         }
       }
+
+      const styles = StyleSheet.create({
+        container: {
+          flex: 1,
+          width: '100%',
+          height: '100%',
+        },
+        headline: {
+        fontSize: 18,
+        justifyContent: 'center',
+        alignItems: 'center',
+     },
+      });
+
 
   export default Instructions12;

@@ -54,7 +54,9 @@ class LoginScreen extends Component {
                         full
                         rounded
                         success
-                        onPress={()=> this.loginUser(this.state.email,this.state.password)}>
+                        onPress={()=>
+                            this.loginUser(this.state.email,this.state.password).then(console.log('a'))
+                        }>
                         <Text>Log in</Text>
                     </Button>
                 </TouchableOpacity>

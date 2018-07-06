@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet ,Text, View,Button,Image,video} from 'react-native';
+import { StyleSheet ,Text, View,Button,Image,video,ScrollView} from 'react-native';
 
 
 
@@ -11,28 +11,45 @@ import { StyleSheet ,Text, View,Button,Image,video} from 'react-native';
   };
   render() {
     return (
-      <View>
-        <Text>                    PLace tip of lancet on the clean finger.   </Text>
-          <Text>                        Firmly Push Down on the other end.   </Text>
+      <ScrollView>
+        <Text style={styles.headline}>                Place tip of lancet on the clean finger.   </Text>
+          <Text style={styles.headline}>                 Firmly push down on the other end.   </Text>
           <Text></Text>
             <Text></Text>
 
-          <Image source={       require('../Images/8A.png')}   style={{width: 370, height: 250}} />
+          <Image source={       require('../Images/8A.png')}   style={{width: 420, height: 250}} />
         <Text>                       </Text>
           <Text>                       </Text>
-          <Text>                          You will feel a momentary pinprick.  </Text>
-          <Text>                               After discard lancet in trash   </Text>
-            <Text>                                          completely.</Text>
-          <Image source={       require('../Images/8B.png')}   style={{width: 370, height: 250}} />
+          <Text style={styles.headline}>                  You will feel a momentary pinprick.  </Text>
+          <Text style={styles.headline}>                       After discard lancet in trash   </Text>
 
+        <Text style={styles.headline}>                                   completely.</Text>
+        <Text></Text>
+          <Image source={       require('../Images/8B.png')}   style={{width: 420, height: 250}} />
 
+<Text></Text>
 
 
       <Button onPress= {() => this.props.navigation.navigate ('Instructions8')}
         title="Next"/>
-</View>
+</ScrollView>
           );
         }
       }
+
+      const styles = StyleSheet.create({
+        container: {
+          flex: 1,
+          width: '100%',
+          height: '100%',
+        },
+        headline: {
+        fontSize: 18,
+        justifyContent: 'center',
+        alignItems: 'center',
+     },
+      });
+
+
 
   export default Instructions7;

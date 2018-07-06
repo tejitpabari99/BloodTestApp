@@ -23,9 +23,13 @@ import { StyleSheet ,Text, View,Button,Image} from 'react-native';
       <Text></Text>
       <Text></Text>
       <Button onPress= {() => this.props.navigation.navigate ('HIVSyphillisInfo')}
-        title="HIV Syphillis Information"/>
+        title="Syphillis Information"/>
         <Text></Text>
         <Text></Text>
+        <Button onPress= {() => this.props.navigation.navigate ('HIVinfo')}
+          title=" HIV Information"/>
+          <Text></Text>
+          <Text></Text>
          <Button onPress= {() => this.props.navigation.navigate ('Clinics')}
             title="Nearby Clinics"/>
 

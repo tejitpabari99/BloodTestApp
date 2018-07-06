@@ -11,6 +11,7 @@ class SignupScreen extends Component {
             email:'',
             password:'',
             error:'',
+        })
     }
 
     signupUser = (email, password) =>{

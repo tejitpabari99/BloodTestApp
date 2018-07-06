@@ -12,18 +12,18 @@ import { StyleSheet ,Text, View,Button,Image,video} from 'react-native';
   render() {
     return (
       <View>
-        <Text>                    Squeeze your finger to extrract blood.   </Text>
-          <Text>                         </Text>
+        <Text style={styles.headline}>               Squeeze your finger to extrract blood.   </Text>
+          <Text style={styles.headline}>                          </Text>
             <Text>                         </Text>
-              <Text>                    Grab solution tube #1 and drop the       </Text>
-              <Text>                            the blood directly into the tube. </Text>
+              <Text style={styles.headline}>                Grab solution tube #1 and drop the       </Text>
+              <Text style={styles.headline}>                   the blood directly into the tube. </Text>
                 <Text>                       </Text>
-          <Image source={       require('../Images/9.png')}   style={{width: 370, height: 250}} />
+          <Image source={       require('../Images/9.png')}   style={{width: 420, height: 250}} />
         <Text>                       </Text>
           <Text>                       </Text>
   <Text>                         </Text>
-    <Text>                  MAKE SURE TO GET A FEW DROPS OF       </Text>
-    <Text>                            BLOOD INTO THE TUBE.                 </Text>
+    <Text style={styles.headline}>                   Make sure you get a few drops of    </Text>
+    <Text style={styles.headline}>                             Blood into the tube.                 </Text>
 <Text>                         </Text>
 
 
@@ -36,5 +36,19 @@ import { StyleSheet ,Text, View,Button,Image,video} from 'react-native';
           );
         }
       }
+
+      const styles = StyleSheet.create({
+        container: {
+          flex: 1,
+          width: '100%',
+          height: '100%',
+        },
+        headline: {
+        fontSize: 18,
+        justifyContent: 'center',
+        alignItems: 'center',
+     },
+      });
+
 
   export default Instructions8;

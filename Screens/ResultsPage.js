@@ -46,12 +46,30 @@ import { StyleSheet ,Text, View,Button,Image} from 'react-native';
 
               <Text></Text>
                 <Text></Text>
-                  <Text>    Any positive results should be confirmed by a </Text>
-                  <Text>                             healthcare provider.</Text>
+                <Text></Text>
+                  <Text></Text>
                   <Text></Text>
                     <Text></Text>
-                    <Text>Negative results may not detect a recent infection. For</Text>
-                      <Text>      for more information, click on the resources tab.</Text>
+                    <Text></Text>
+                      <Text></Text>
+                      <Text></Text>
+                        <Text></Text>
+                          <Text></Text>
+                          <Text></Text>
+                            <Text></Text>
+                              <Text></Text>
+                              <Text></Text>
+                              <Text></Text>
+                                <Text></Text>
+                                <Text></Text>
+                                <Text></Text>
+
+                  <Text style={{fontWeight: 'bold',fontSize:12}}>                   Any positive results should be confirmed by a </Text>
+                  <Text style={{fontWeight: 'bold',fontSize:12}}>                                         healthcare provider.</Text>
+                  <Text></Text>
+
+                    <Text style={{fontWeight: 'bold',fontSize:12}}>             Negative results may not detect a recent infection. For</Text>
+                     <Text style={{fontWeight: 'bold',fontSize:12}}>                   for more information, click on the resources tab.</Text>
 
 </View>
           );

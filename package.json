@@ -28,6 +28,7 @@
         "react-art": "^16.4.1",
         "react-dom": "^16.4.0",
         "react-native": "^0.55",
+        "react-native-camera": "^1.1.4",
         "react-native-web": "^0.8.4",
         "react-navigation": "^1.5.11"
     }

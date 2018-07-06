@@ -1,4 +1,28 @@
 import React, { Component } from 'react';
+import { WebView, Linking } from 'react-native';
+
+class HIVSyphillisInfo extends Component {
+  render() {
+    const uri = 'https://www.cdc.gov/std/syphilis/stdfact-msm-syphilis.htm';
+    return (
+      <WebView
+        ref={(ref) => { this.webview = ref; }}
+        source={{ uri }}
+        onNavigationStateChange={(event) => {
+          if (event.url !== uri) {
+            this.webview.stopLoading();
+            Linking.openURL(event.url);
+          }
+        }}
+      />
+    );
+  }
+}
+
+export default HIVSyphillisInfo;
+
+
+/*import React, { Component } from 'react';
 import { StyleSheet ,Text, View,Button,Image,video} from 'react-native';
 
 
@@ -27,3 +51,4 @@ import { StyleSheet ,Text, View,Button,Image,video} from 'react-native';
       }
 
   export default HIVSyphillisInfo;
+  */
